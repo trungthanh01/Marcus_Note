@@ -42,3 +42,7 @@ Thư viện **@supabase/ssr** là một công cụ tiện ích chuyên biệt đ
 
 ---
 Hôm sau học tiếp
+
+## Liên kết
+<!-- connected by /marcus_connect 2026-03-26 -->
+- [[02_Middleware]] — Middleware đọc token auth từ cookies (@supabase/ssr) để bảo vệ routes trong Next.js

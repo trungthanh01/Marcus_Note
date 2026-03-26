@@ -22,3 +22,11 @@ Nguồn tài liệu liệt kê 8 lỗi thiết kế logic điển hình:
 ### 3. Tầm quan trọng của việc nhận diện
 
 Mỗi chương về lỗi thiết kế logic trong tài liệu đều cung cấp các dấu hiệu nhận biết thông qua những câu hỏi hoặc phàn nàn phổ biến từ đội ngũ dự án. Việc hiểu rõ các giải pháp thay thế (như bảng trung gian, bảng phụ thuộc, hay các mô hình cây thay thế) giúp các nhóm phát triển đưa ra quyết định tốt nhất dựa trên yêu cầu thực tế và thực tại của công nghệ RDBMS.
+
+## Liên kết
+<!-- connected by /marcus_connect 2026-03-26 -->
+- [[0. Overview]] — tổng quan sách SQL Antipatterns, ngữ cảnh chứa chương này
+- [[1.1 Jaywalking]] — lỗi lưu danh sách phân tách bằng dấu phẩy thay vì bảng trung gian
+- [[1.2 Naive Trees]] — lỗi thiết kế cây phân cấp chỉ dùng parent_id
+- [[1.3 Entity-Attribute-Value (EAV)]] — lỗi mô hình thuộc tính linh hoạt quá mức
+- [[1.4  Polymorphic Associations]] — lỗi khóa ngoại tham chiếu nhiều bảng cha

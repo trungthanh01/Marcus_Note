@@ -32,3 +32,7 @@ Tệp **middleware.ts** đóng vai trò là "người gác cổng" trung tâm tr
 	- **Bộ lọc (Matcher):** Bạn có thể cấu hình Middleware chỉ chạy trên một số đường dẫn nhất định bằng cách sử dụng `config.matcher`, giúp tối ưu hóa hiệu suất cho các trang công khai (như trang chủ hay blog) mà không cần kiểm tra xác thực không cần thiết.
 
 Tóm lại, **middleware.ts** là lớp bảo mật đầu tiên và quan trọng nhất, giúp đảm bảo rằng chỉ những người dùng có quyền mới có thể tiếp cận được các khu vực nhạy cảm của ứng dụng một cách mượt mà và an toàn nhất.
+
+## Liên kết
+<!-- connected by /marcus_connect 2026-03-26 -->
+- [[01_Supabase auth và Next.js]] — kiến trúc auth và @supabase/ssr là nền tảng để middleware đọc session từ cookies
