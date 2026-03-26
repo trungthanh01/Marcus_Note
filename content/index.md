@@ -4,7 +4,9 @@ title: Marcus's Learning Notes
 
 # Ghi chú học tập của Marcus
 
-Tao ghi lại những thứ tao học về backend, database design, và full-stack development.
+Mình ghi lại những thứ mình học về backend, database design, và full-stack development.
+Bên cạnh đó còn các bài suy nghĩ về công nghệ nữa, chỉ là một nhà văn mù chữ tìm mò chữ để học
+
 
 ## Chủ đề
 
