@@ -21,5 +21,5 @@ Daily notes về authentication, middleware, server/client components, RLS, và 
 **[[0. Overview|Database Design]]**
 Nghiên cứu các antipattern phổ biến trong thiết kế cơ sở dữ liệu — từ Jaywalking đến Polymorphic Associations.
 
-**[[00_welcome|Blog]]**
+**[[01_Cố gắng và chăm chỉ không hề ép buộc|Blog]]**
 Suy nghĩ rời về công nghệ, học tập, và những thứ không có chỗ trong ghi chú kỹ thuật.
