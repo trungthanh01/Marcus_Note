@@ -19,6 +19,13 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.ConditionalRender({
+      component: Component.ShareButtons(),
+      condition: (page) =>
+        page.fileData.slug !== "index" &&
+        !page.fileData.slug?.startsWith("tags/") &&
+        page.fileData.text !== undefined,
+    }),
   ],
   left: [
     Component.PageTitle(),
