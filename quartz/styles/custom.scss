@@ -5,3 +5,61 @@
   --bodyFont: "Times New Roman", "Times", serif !important;
   --headerFont: "Times New Roman", "Times", serif !important;
 }
+
+// === Medieval Academic Enhancements ===
+
+// Heading refinements — letter spacing & small caps
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-variant: small-caps;
+}
+
+h2 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.25em;
+}
+
+// Ornamental horizontal rule (asterism separator)
+hr {
+  border: none;
+  text-align: center;
+  margin: 2em 0;
+  &::before {
+    content: "⁂";
+    color: var(--gray);
+    font-size: 1.2em;
+    letter-spacing: 0.5em;
+  }
+}
+
+// Blockquote — scholarly left bar + italic
+blockquote {
+  border-left: 3px solid var(--gray) !important;
+  padding-left: 1.2em !important;
+  margin-left: 0 !important;
+  font-style: italic;
+  color: var(--darkgray);
+}
+
+// Internal links — subtle underline, warm tone
+a.internal {
+  text-decoration: underline;
+  text-decoration-color: var(--lightgray);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+  &:hover {
+    text-decoration-color: var(--gray);
+  }
+}
+
+// Graph section title
+.graph > h3 {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem !important;
+  color: var(--darkgray);
+}
+

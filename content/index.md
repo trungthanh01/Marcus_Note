@@ -2,14 +2,24 @@
 title: Marcus's Learning Notes
 ---
 
-# Ghi chú học tập của Marcus
+# Marcus's Notes
 
-Mình ghi lại những thứ mình học về backend, database design, và full-stack development.
-Bên cạnh đó còn các bài suy nghĩ về công nghệ nữa, chỉ là một nhà văn mù chữ tìm mò chữ để học
+*Ghi chép như một cách tư duy — không phải để dạy, mà để hiểu.*
 
+---
+
+Đây là nơi tôi lưu lại quá trình học backend, database design, và full-stack development. Những ghi chú này không phải tutorial — chúng là dấu vết của một người đang cố hiểu tại sao mọi thứ hoạt động theo cách chúng vốn có.
 
 ## Chủ đề
 
-- [[01_Daily_Supabase_Next.js/index|Daily Notes — Supabase & Next.js]]
-- [[02_Back End Relationships/index|Backend Relationships & Architecture]]
-- [[03_SQL Antipatterns Avoiding Common Pitfalls in Database Design/index|SQL Antipatterns]]
+**[[01_Design System with Todo List|Design System]]**
+Xây dựng design system từ đầu thông qua một dự án Todo List thực tế với Next.js và Supabase.
+
+**[[01_Supabase auth và Next.js|Supabase & Next.js]]**
+Daily notes về authentication, middleware, server/client components, RLS, và các patterns thực tế.
+
+**[[0. Overview|Database Design]]**
+Nghiên cứu các antipattern phổ biến trong thiết kế cơ sở dữ liệu — từ Jaywalking đến Polymorphic Associations.
+
+**[[00_welcome|Blog]]**
+Suy nghĩ rời về công nghệ, học tập, và những thứ không có chỗ trong ghi chú kỹ thuật.

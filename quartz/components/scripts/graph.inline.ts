@@ -209,7 +209,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    return 1.2 + Math.sqrt(numLinks) * 0.65
   }
 
   let hoveredNodeId: string | null = null
@@ -294,11 +294,21 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
             100,
           ),
         )
+      } else if (hoveredNodeId !== null && n.active) {
+        tweenGroup.add(
+          new Tweened<Text>(n.label).to(
+            {
+              alpha: 0.75,
+              scale: { x: defaultScale, y: defaultScale },
+            },
+            100,
+          ),
+        )
       } else {
         tweenGroup.add(
           new Tweened<Text>(n.label).to(
             {
-              alpha: n.label.alpha,
+              alpha: 0,
               scale: { x: defaultScale, y: defaultScale },
             },
             100,
@@ -509,14 +519,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
           stage.scale.set(transform.k, transform.k)
           stage.position.set(transform.x, transform.y)
 
-          // zoom adjusts opacity of labels too
-          const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
+          // Labels are hidden on zoom — only show on hover
           const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
 
           for (const label of labelsContainer.children) {
             if (!activeNodes.includes(label)) {
-              label.alpha = scaleOpacity
+              label.alpha = 0
             }
           }
         }),
